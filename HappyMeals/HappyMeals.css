@@ -1,0 +1,51 @@
+
+ body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    width: 330px; 
+    height: 380px;  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.inner-card {
+    background-color: rgb(239, 174, 52);
+    color: rgb(70, 70, 70); 
+    font-family: "Bree Serif"; 
+    padding: 25px; 
+    width: 280px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.Title { 
+    font-size: 26px;  
+}
+
+.Subtitle { 
+    font-size: 15px;   
+}
+
+.start {
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    height: 45px;
+    width: 100px;
+    font-size: 14px;
+   
+}   
