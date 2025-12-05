@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    padding-left: 10px;
+}
+
+.Page {
+    background-color: #1b1b1b;
+    min-height: 100vh; 
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.apj-image {
+    height: 190px;
+    width: 150px;
+    border-radius: 10px 0 0 10px;
+}
+
+.apj-content {
+    padding: 15px;
+}
+
+.apj-box {
+    background-color: #e6f6ff;
+    border-radius: 10px;
+    display: flex;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.apj-book {
+    color: #183b56;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 8px 0;
+    font-size: 20px;
+}
+
+.read-btn {
+    background-color: #0967d2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.p2 {
+    color: #183b56;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 5px 0 15px 0;
+}
+
+.p1 {
+    font-family: 'Roboto', sans-serif;
+    color: #183b56;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.recommended-books {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.popular-books {
+    font-family: 'Bree Serif', serif;
+}
+
+.book-box {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.book-image {
+    height: 150px;
+    width: 100px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.book-content {
+    padding-top: 5px;
+}
+
+.book-title {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+
+.p3 {
+    color: #9aa5b1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.p4 {
+    color: #9aa5b1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 5px 0 15px 0;
+}
