@@ -3,42 +3,126 @@ body {
     padding: 0;
 }
 
-h1 {
-    font-family: 'Bree Serif', serif;
-    color: white;
-    padding-left: 10px;
-}
-
 .Page {
     background-color: #1b1b1b;
-    min-height: 100vh; 
+    min-height: 100vh;
     width: 100%;
-    padding: 30px 10px;
+    padding: 20px;
 }
 
-.apj-image {
-    height: 190px;
-    width: 150px;
-    border-radius: 10px 0 0 10px;
-}
-
-.apj-content {
-    padding: 15px;
+.popular-books {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .apj-box {
     background-color: #e6f6ff;
     border-radius: 10px;
     display: flex;
-    width: 350px;
-    margin-bottom: 30px;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.apj-image {
+    height: 250px;
+    width: 180px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+}
+
+.apj-content {
+    padding: 25px;
+    flex: 1;
 }
 
 .apj-book {
     color: #183b56;
     font-family: 'Roboto', sans-serif;
-    margin: 0 0 8px 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.p1 {
+    font-family: 'Roboto', sans-serif;
+    color: #183b56;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.p2 {
+    color: #183b56;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.recommended-books {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.recommended-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-box {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    width: calc(50% - 10px);
+    min-width: 300px;
+}
+
+.book-image {
+    height: 150px;
+    width: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.book-content {
+    flex: 1;
+}
+
+.book-title {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
     font-size: 20px;
+    font-weight: bold;
+}
+
+.p3 {
+    color: #9aa5b1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.p4 {
+    color: #9aa5b1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .read-btn {
@@ -46,70 +130,44 @@ h1 {
     border: none;
     border-radius: 5px;
     color: white;
-    height: 30px;
+    height: 35px;
     width: 100px;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.p2 {
-    color: #183b56;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    margin: 5px 0 15px 0;
+.read-btn:hover {
+    opacity: 0.85;
 }
 
-.p1 {
-    font-family: 'Roboto', sans-serif;
-    color: #183b56;
-    font-size: 14px;
-    margin: 5px 0;
+a {
+    text-decoration: none;
 }
 
-.recommended-books {
-    font-family: 'Bree Serif', serif;
-    color: white;
-    padding-left: 10px;
-    margin-bottom: 20px;
-}
 
-.popular-books {
-    font-family: 'Bree Serif', serif;
-}
-
-.book-box {
-    display: flex;
-    margin-bottom: 20px;
-    align-items: flex-start;
-}
-
-.book-image {
-    height: 150px;
-    width: 100px;
-    border-radius: 8px;
-    margin-right: 15px;
-}
-
-.book-content {
-    padding-top: 5px;
-}
-
-.book-title {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 0 8px 0;
-    font-size: 18px;
-}
-
-.p3 {
-    color: #9aa5b1;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    margin: 5px 0;
-}
-
-.p4 {
-    color: #9aa5b1;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    margin: 5px 0 15px 0;
+@media (max-width: 768px) {
+    .apj-box {
+        flex-direction: column;
+        max-width: 350px;
+    }
+    
+    .apj-image {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    
+    .recommended-container {
+        flex-direction: column;
+    }
+    
+    .book-box {
+        width: 100%;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
