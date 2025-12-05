@@ -1,0 +1,126 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  font-family: 'Digital7';
+  background-color: rgb(27, 25, 25);
+  height: 100vh;
+
+  
+}
+
+@font-face {
+  font-family: 'Digital7';
+  src: url('fonts/digital-7.ttf') format('truetype');
+}
+
+.traffic-light{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.light{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: blue;
+  border-style: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.red{
+  background-color: rgb(255, 28, 28);
+  box-shadow: 0px 0px 50px rgb(255, 28, 28);
+}
+
+.yellow{
+  background-color: rgb(255, 213, 28);
+  box-shadow: 0px 0px 50px rgb(255, 213, 28);
+}
+
+.green{
+  background-color: rgb(28, 255, 28);
+  box-shadow: 0px 0px 50px rgb(28, 255, 28);
+}
+
+.timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 125px;
+  font-size: 125px;
+  font-weight: bold;
+  text-align: center;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  rgb(255, 28, 28);
+  border-radius: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color:  rgb(255, 28, 28);
+  box-shadow: 0px 0px 50px rgb(255, 28, 28);
+}
+
+.disable{
+   background-color: rgb(27, 25, 25);
+   box-shadow: 0px 0px 10px rgb(147, 147, 147);
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.control-btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.stop-btn {
+    background-color: rgb(255, 28, 28);
+    color: black;
+    box-shadow: 0px 0px 20px rgba(255, 28, 28, 0.5);
+}
+
+.wait-btn {
+    background-color: rgb(255, 213, 28);
+    color: black;
+    box-shadow: 0px 0px 20px rgba(255, 213, 28, 0.5);
+}
+
+.start-btn {
+    background-color: rgb(28, 255, 28);
+    color: black;
+    box-shadow: 0px 0px 20px rgba(28, 255, 28, 0.5);
+}
+
+.control-btn:hover {
+    transform: scale(1.1);
+}
